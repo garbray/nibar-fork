@@ -13,7 +13,7 @@ Originally forked from '...' I made it work with yabai and tweaked the aesthetic
 Clone this repo to your Übersicht widgets directory.
 
 ```bash
-$ git clone https://github.com/kkga/nibar $HOME/Library/Application\ Support/Übersicht/widgets/nibar
+$ git clone https://github.com/garbray/nibar-fork $HOME/Library/Application\ Support/Übersicht/widgets/nibar
 ```
 
 ## Dependencies
