@@ -1,4 +1,4 @@
-import styles from "./lib/styles.jsx";
+import { styles } from "./lib/styles.jsx";
 
 const style = {
   background: styles.colors.bg,
@@ -14,9 +14,11 @@ const style = {
   left: "0px",
 };
 
+console.log(styles);
 export const refreshFrequency = 1000000;
 
 export const render = ({ output }) => {
+  console.log(styles);
   return <div style={style} />;
 };
 

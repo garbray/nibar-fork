@@ -5,7 +5,7 @@ import Wifi from "./lib/Wifi.jsx";
 import Dnd from "./lib/Dnd.jsx";
 import Error from "./lib/Error.jsx";
 import parse from "./lib/parse.jsx";
-import styles from "./lib/styles.jsx";
+import { styles } from "./lib/styles.jsx";
 
 const style = {
   display: "grid",
@@ -20,7 +20,7 @@ const style = {
   fontFamily: styles.fontFamily,
   fontSize: styles.fontSize,
   lineHeight: styles.lineHeight,
-  fontWeight: styles.fontWeight
+  fontWeight: styles.fontWeight,
 };
 
 export const refreshFrequency = 10000;

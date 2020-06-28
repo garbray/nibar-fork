@@ -1,7 +1,7 @@
-import styles from "./styles.jsx"
+import { styles } from "./styles.jsx";
 
 const style = {
-  color: styles.colors.red
+  color: styles.colors.red,
 };
 
 const render = ({ msg, side }) => {

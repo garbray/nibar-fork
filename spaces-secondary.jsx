@@ -1,7 +1,7 @@
 import Desktop from "./lib/Desktop.jsx";
 import Error from "./lib/Error.jsx";
 import parse from "./lib/parse.jsx";
-import styles from "./lib/styles.jsx";
+import { styles } from "./lib/styles.jsx";
 
 const style = {
   padding: "0 8px",
@@ -16,7 +16,7 @@ const style = {
   lineHeight: styles.lineHeight,
   fontSize: styles.fontSize,
   color: styles.colors.dim,
-  fontWeight: styles.fontWeight
+  fontWeight: styles.fontWeight,
 };
 
 export const refreshFrequency = false;

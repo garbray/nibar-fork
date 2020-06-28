@@ -1,23 +1,24 @@
-import styles from "./styles.jsx";
+import { styles } from "./styles.jsx";
 
 const getBatteryLifeClass = (percentage) => {
+  console.log(styles);
   switch (true) {
-    case percentage < 15:
+    case percentage <= 15:
       return {
         color: styles.colors.red,
         icon: "fa fa-battery-empty",
       };
-    case percentage < 30:
+    case percentage <= 30:
       return {
         color: styles.colors.orange,
         icon: "fa fa-battery-quarter",
       };
-    case percentage < 50:
+    case percentage <= 50:
       return {
         color: styles.colors.yellow,
         icon: "fa fa-battery-half",
       };
-    case percentage < 90:
+    case percentage <= 90:
       return {
         color: styles.colors.cyan,
         icon: "fa fa-battery-three-quarters",
@@ -26,6 +27,11 @@ const getBatteryLifeClass = (percentage) => {
       return {
         color: styles.colors.green,
         icon: "fa fa-battery-full",
+      };
+    default:
+      return {
+        color: styles.colors.fg,
+        icon: "fa fa-battery-empty",
       };
   }
 };

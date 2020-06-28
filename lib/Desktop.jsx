@@ -1,4 +1,4 @@
-import styles from "./styles.jsx";
+import { colors } from "./styles.jsx";
 import run from "uebersicht";
 
 const containerStyle = {
@@ -23,8 +23,8 @@ const iconBaseStyle = {
 };
 const focusedStyle = {
   ...iconBaseStyle,
-  borderBottom: "2px solid #ff79c6",
-  color: "#ff79c6",
+  borderBottom: `2px solid ${colors.pink}`,
+  color: `${colors.pink}`,
 };
 
 const GetIcon = ({ index, focused }) => {

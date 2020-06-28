@@ -1,45 +1,31 @@
 import Desktop from "./lib/Desktop.jsx";
 import Error from "./lib/Error.jsx";
 import parse from "./lib/parse.jsx";
-import styles from "./lib/styles.jsx";
-
-const style = {
-  padding: "0 10px",
-  display: "grid",
-  gridAutoFlow: "column",
-  gridGap: "25px",
-  position: "fixed",
-  overflow: "hidden",
-  left: "0px",
-  top: "0px",
-  fontFamily: styles.fontFamily,
-  lineHeight: styles.lineHeight,
-  fontSize: styles.fontSize,
-  color: styles.colors.dim,
-  fontWeight: styles.fontWeight,
-};
+import { styles } from "./lib/styles.jsx";
 
 export const refreshFrequency = false;
 export const command = "./nibar/scripts/spaces_primary.sh";
 
 export const render = ({ output }) => {
   const data = parse(output);
+
+  console.log(styles.spaceStyle);
   if (typeof data === "undefined") {
     return (
-      <div style={style}>
+      <div style={styles.spaceStyle}>
         <Error msg="Error: unknown script output" side="left" />
       </div>
     );
   }
   if (typeof data.error !== "undefined") {
     return (
-      <div style={style}>
+      <div style={styles.spaceStyle}>
         <Error msg={`Error: ${data.error}`} side="left" />
       </div>
     );
   }
   return (
-    <div style={style}>
+    <div style={styles.spaceStyle}>
       <link
         rel="stylesheet"
         type="text/css"

@@ -1,4 +1,4 @@
-import styles from "./styles.jsx";
+import { styles } from "./styles.jsx";
 const iconStyle = {
   fontSize: "10px",
   padding: "4px",
